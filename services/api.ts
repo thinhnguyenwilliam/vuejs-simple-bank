@@ -1,9 +1,6 @@
+// simple-bank-2/services/api.ts
 import axios from 'axios'
 
-const handleLogin = async () => {
-  const res = await axios.post('http://localhost:8080/login', {
-    email: email.value,
-    password: password.value
-  })
-  console.log(res.data)
-}
+export const api = axios.create({
+  baseURL: 'http://localhost:8084/v1'
+})
