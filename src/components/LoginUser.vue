@@ -8,7 +8,7 @@ import InputText from 'primevue/inputtext'
 import Password from 'primevue/password'
 import Button from 'primevue/button'
 import axios from 'axios'
-import { api } from '../../services/api'
+import { api } from '../services/api'
 
 const email = ref('')
 const password = ref('')
